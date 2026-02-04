@@ -20,16 +20,16 @@ const emojiList = [
     "🦕","🐙","🦑","🦐","🦞","🐠","🐟","🐡","🐬","🦈"
 ];
 
-const displayemoji = document.getElementById("displayemoj");
-const generate = document.getElementById("generate");
+const emojiDisplay = document.getElementById("emojiDisplay");
+const generateB = document.getElementById("generateB");
 
 function getRandomEmoji() {
     const randomIndex = Math.floor(Math.random() * emojiList.length);
     return emojiList[randomIndex];
 }
 
-generate.addEventListener("click", () => {
-    displayemoji.textContent = getRandomEmoji();
+generateB.addEventListener("click", () => {
+    emojiDisplay.textContent = getRandomEmoji();
 });
 
 
